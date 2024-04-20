@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "CompleteSentence",
+    "RelativePath": "OpenAi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
