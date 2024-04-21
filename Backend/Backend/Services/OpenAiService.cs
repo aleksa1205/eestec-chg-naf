@@ -48,7 +48,7 @@ public class OpenAiService : IOpenAiService
     public async Task<List<string>> GetSentencesFromFile()
     {
         Random rnd = new Random();
-        string[] lines = File.ReadAllLines(@"C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
+        string[] lines = File.ReadAllLines(@"D:\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
         List<string> sentences = new List<string>();
         while (sentences.Count < 3)
         {
@@ -86,13 +86,12 @@ public class OpenAiService : IOpenAiService
         var chat = api.Chat.CreateConversation();
         int i = 0;
         int level = 1;
-        while (i < 10)
+        while (i < 3)
         {
             chat.AppendSystemMessage($"Generate one sentence on English and its difficulty should be of {level} out of 5");
-            var res = await chat.GetResponseFromChatbot();
+            var res = await chat.GetResponseFromChatbotAsync();
             lista.Add(res);
-            var let= await chat.GetResponseFromChatbotAsync();
-            lista.Add(res);
+            level += 2;
             i++;
         }
         return lista;

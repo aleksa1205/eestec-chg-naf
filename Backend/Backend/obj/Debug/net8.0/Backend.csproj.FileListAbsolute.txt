@@ -110,3 +110,4 @@ C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-na
 C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\Backend\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\Backend\Backend\obj\Debug\net8.0\ref\Backend.dll
 C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\Backend\Backend\bin\Debug\net8.0\package-lock.json
+D:\eestec-chg-naf\Backend\Backend\bin\Debug\net8.0\package-lock.json
