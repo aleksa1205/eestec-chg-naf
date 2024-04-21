@@ -36,6 +36,12 @@ public class OpenAiController : ControllerBase
         var res = await _openAiService.GenerateSentence();
         return Ok(res);
     }
+    [HttpGet("GenerateInitialTest")]
+    public async Task<IActionResult> GenerateInitialTest()
+    {
+        var res = await _openAiService.GetSentencesFromFile();
+        return Ok(res);
+    }
 
     [HttpGet("Grade/{originalSentence}/{userSentence}")]
     public async Task<IActionResult> Grade(string originalSentence, string userSentence)
@@ -47,7 +53,7 @@ public class OpenAiController : ControllerBase
     [HttpGet("GenerateTest")]
     public async Task<IActionResult> GenerateTest()
     {
-        var res= await _openAiService.GenerateTest();
+        var res = await _openAiService.GenerateTest();
         return Ok(res);
     }
 

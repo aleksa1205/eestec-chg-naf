@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Models;
 using System.ComponentModel;
+using System.IO;
 
 namespace Backend.Services;
 
@@ -34,7 +35,8 @@ public class OpenAiService : IOpenAiService
         return res;
     }
 
-    public async Task<string> GenerateSentence(){
+    public async Task<string> GenerateSentence()
+    {
         var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
         var chat = api.Chat.CreateConversation();
         chat.AppendSystemMessage("Generate one sentence for the student to translate and nothing else.");
@@ -42,19 +44,35 @@ public class OpenAiService : IOpenAiService
         var senOnSrb = await TranslateESSentence(senOnEng);
         return senOnEng + senOnSrb;
     }
-
+    public async Task<string[]> GetSentencesFromFile()
+    {
+        Random rnd = new Random();
+        string[] lines = File.ReadAllLines(@"C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
+        List<string> sentences = new List<string>();
+        while (sentences.Count < 5)
+        {
+            // uzima iz svakog nivoa znanja po jednu recenicu i vraca ih (nivoi od 1-6)
+            string line = lines[rnd.Next(1, 5990)];
+            string[] split = line.Split('\t');
+            if (Convert.ToInt32(split[1]) == sentences.Count + 1)
+            {
+                sentences.Add(split[0]);
+            }
+        }
+        return sentences.ToArray();
+    }
     public async Task<int> Grade(string orgSentence, string userSentence)
     {
         int sum = 0;
         int n = 3;
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
             var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
             var chat = api.Chat.CreateConversation();
             chat.AppendSystemMessage("You are given two sentences orgSentence and userSentence grade how similar they are on the scale of 0 to 100, don't grade to softly. Only return the number of points.");
             chat.AppendUserInput(orgSentence);
             chat.AppendUserInput(userSentence);
-            var res= await chat.GetResponseFromChatbotAsync();
+            var res = await chat.GetResponseFromChatbotAsync();
             sum += Int32.Parse(res);
         }
         return sum / n;
@@ -63,7 +81,7 @@ public class OpenAiService : IOpenAiService
     public async Task<List<string>> GenerateTest()
     {
         var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
-        List<string> lista=new List<string>();
+        List<string> lista = new List<string>();
         var chat = api.Chat.CreateConversation();
         int i = 0;
         int level = 1;
@@ -80,14 +98,14 @@ public class OpenAiService : IOpenAiService
     {
         var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
         List<string> lista = new List<string>();
-        var chat=api.Chat.CreateConversation();
+        var chat = api.Chat.CreateConversation();
         chat.AppendSystemMessage($"Generate one sentence on English and its difficulty should be of {level} out of 5");
         int i = 0;
         while (i < 5)
         {
             var res = await chat.GetResponseFromChatbotAsync();
             lista.Add(res);
-            res=await TranslateESSentence(res);
+            res = await TranslateESSentence(res);
             lista.Add(res);
             i++;
         }

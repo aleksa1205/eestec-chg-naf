@@ -20,7 +20,7 @@ function InitialQuiz() {
 export default InitialQuiz;
 
 export async function loader() {
-    const response = await fetch("https://localhost:7050/OpenAi/Generate");
+    const response = await fetch("https://localhost:7050/OpenAi/GetSentencesFromFile");
     const data = await response.text();
     return data;
 }
