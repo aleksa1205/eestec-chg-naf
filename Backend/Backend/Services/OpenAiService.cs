@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Models;
 using System.ComponentModel;
+using System.Net.Sockets;
 
 namespace Backend.Services;
 
@@ -72,6 +73,9 @@ public class OpenAiService : IOpenAiService
             chat.AppendSystemMessage$"Generate one sentence on English and its difficulty should be of {level} out of 5");
             var res=await chat.GetResponseFromChatbot();
             lista.Add(res);
+            var let= await chat.GetResponseFromChatbotAsync();
+            lista.Add(res);
+            i++;
         }
         return lista;
     }
