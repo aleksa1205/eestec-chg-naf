@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Models;
+using System.ComponentModel;
 
 namespace Backend.Services;
 
@@ -45,6 +46,7 @@ public class OpenAiService : IOpenAiService
     public async Task<int> Grade(string orgSentence, string userSentence)
     {
         int sum = 0;
+        int n = 3;
         for(int i = 0; i < 3; i++)
         {
             var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
@@ -55,6 +57,40 @@ public class OpenAiService : IOpenAiService
             var res= await chat.GetResponseFromChatbotAsync();
             sum += Int32.Parse(res);
         }
-        return sum/3;
+        return sum / n;
+    }
+
+    public async Task<List<string>> GenerateTest()
+    {
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        List<string> lista=new List<string>();
+        var chat = api.Chat.CreateConversation();
+        int i = 0;
+        int level = 1;
+        while (i < 10)
+        {
+            chat.AppendSystemMessage$"Generate one sentence on English and its difficulty should be of {level} out of 5");
+            var res=await chat.GetResponseFromChatbot();
+            lista.Add(res);
+        }
+        return lista;
+    }
+
+    public async Task<List<string>> GeneratePartailTest(int level)
+    {
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        List<string> lista = new List<string>();
+        var chat=api.Chat.CreateConversation();
+        chat.AppendSystemMessage($"Generate one sentence on English and its difficulty should be of {level} out of 5");
+        int i = 0;
+        while (i < 5)
+        {
+            var res = await chat.GetResponseFromChatbotAsync();
+            lista.Add(res);
+            res=await TranslateESSentence(res);
+            lista.Add(res);
+            i++;
+        }
+        return lista;
     }
 }

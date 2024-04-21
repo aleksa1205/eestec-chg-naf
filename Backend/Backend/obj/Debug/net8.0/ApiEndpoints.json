@@ -1,40 +1,18 @@
 [
   {
     "ContainingType": "Backend.Controllers.OpenAiController",
-    "Method": "CompleteSentence",
-    "RelativePath": "OpenAi",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "text",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Backend.Controllers.OpenAiController",
-    "Method": "CheckLan",
-    "RelativePath": "OpenAi",
+    "Method": "Generate",
+    "RelativePath": "OpenAi/Generate",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "text",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Backend.Controllers.OpenAiController",
-    "Method": "Generate",
-    "RelativePath": "OpenAi/Generate",
+    "Method": "GenerateTest",
+    "RelativePath": "OpenAi/GenerateTest",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
