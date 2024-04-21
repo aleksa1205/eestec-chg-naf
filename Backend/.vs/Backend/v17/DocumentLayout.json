@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\Hakaton\\eestec-chg-naf\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\services\\iopenaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\iopenaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\implicit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\implicit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +42,45 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Implicit.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Implicit.cs",
+              "RelativeDocumentMoniker": "Backend\\Implicit.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Implicit.cs",
+              "RelativeToolTip": "Backend\\Implicit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:35:50.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOpenAiService.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\IOpenAiService.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
+              "RelativeToolTip": "Backend\\Services\\IOpenAiService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:01:59.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpenAiService.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\OpenAiService.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs*",
+              "RelativeToolTip": "Backend\\Services\\OpenAiService.cs*",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwCsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T04:00:55.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OpenAiConfig.cs",
               "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Configuration\\OpenAiConfig.cs",
               "RelativeDocumentMoniker": "Backend\\Configuration\\OpenAiConfig.cs",
@@ -38,44 +88,42 @@
               "RelativeToolTip": "Backend\\Configuration\\OpenAiConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:14:28.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T02:14:28.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OpenAiController.cs",
               "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\OpenAiController.cs",
               "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
               "RelativeToolTip": "Backend\\Controllers\\OpenAiController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T02:13:06.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
               "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:32:21.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T22:32:21.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Backend.csproj",
               "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend\\Backend.csproj",
               "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
               "RelativeToolTip": "Backend\\Backend.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-04-20T22:34:11.418Z"
             }

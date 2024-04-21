@@ -47,7 +47,7 @@ public class OpenAiService : IOpenAiService
     public async Task<List<string>> GetSentencesFromFile()
     {
         Random rnd = new Random();
-        string[] lines = File.ReadAllLines(@"C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
+        string[] lines = File.ReadAllLines(@"../../model/datasets/CEFR-SP_Wikiauto_train.txt");
         List<string> sentences = new List<string>();
         while (sentences.Count < 3)
         {
