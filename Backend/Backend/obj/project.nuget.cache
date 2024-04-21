@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "03l6meWF0QQ6JPdaKNtipBmWlAgecwL25X7FoEAk+HSa/8Nj+M3YZmMMd79r7B1LNwSC3j0/QUzOA+AjsfzB6w==",
+  "dgSpecHash": "p+xa8lpUXcPxYukFvdqvCoDWM15TyursMtQnpOliQxlDSgYaSqkgEKMbuO524iPNw/45ieyhOQHh8W3x8nOSuw==",
   "success": true,
   "projectFilePath": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\alexp\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\alexp\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.0\\microsoft.extensions.configuration.2.1.0.nupkg.sha512",
     "C:\\Users\\alexp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.1.0\\microsoft.extensions.configuration.abstractions.2.1.0.nupkg.sha512",

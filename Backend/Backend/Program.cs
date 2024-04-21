@@ -1,8 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.Configure<OpenAiConfig>(builder.Configuration.GetSection("OpenAI"));
+var openaiconf = new OpenAiConfig();
+var value = System.Environment.GetEnvironmentVariable("OpenAI", EnvironmentVariableTarget.Machine);
+builder.Services.Configure<OpenAiConfig>(options =>
+{
+    options.Key = openaiconf.Key;
+});
+//builder.Services.Configure<OpenAiConfig>(builder.Configur//ation.GetSection("OpenAI"));
+//builder.Services.AddSingleton(openaiconf);
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

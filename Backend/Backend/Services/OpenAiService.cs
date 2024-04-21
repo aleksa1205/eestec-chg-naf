@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Models;
 
 namespace Backend.Services;
@@ -12,28 +13,48 @@ public class OpenAiService : IOpenAiService
         _openAiConfig = optionsMonitor.CurrentValue;
     }
 
-    public async Task<string> CompleteSentence(string text)
-    {
-        //API instance
-        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
-        var res = await api.Completions.GetCompletion(text);
-        return res;
-    }
-
-    public async Task<string> CompleteSentenceAdvance(string text)
-    {
-        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
-        var res = await api.Completions.CreateCompletionAsync(new OpenAI_API.Completions.CompletionRequest(text, model: Model.CurieText, temperature: 0.1));
-        return res.Completions[0].Text;
-    }
-
-    public async Task<string> CheckPLanguage(string language)
+    public async Task<string> TranslateESSentence(string sentence)
     {
         var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
         var chat = api.Chat.CreateConversation();
-        chat.AppendSystemMessage("You are a teacher who helps programmers undestrand things are programming language or not. If user tells you programming language responds with yes, if a user tells you something which is not programming language respond with no, you will respond with yes or no.");
-        chat.AppendUserInput(language);
+        chat.AppendSystemMessage("You are teacher who helps student learn new language. Translate the sentence that student gave you on English to Serbian.");
+        chat.AppendUserInput(sentence);
         var res = await chat.GetResponseFromChatbotAsync();
         return res;
+    }
+
+    public async Task<string> TranslateSESentence(string sentence)
+    {
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        var chat = api.Chat.CreateConversation();
+        chat.AppendSystemMessage("You are teacher who helps student learn new language. Translate the sentence that student gave you on Serbian to English.");
+        chat.AppendUserInput(sentence);
+        var res = await chat.GetResponseFromChatbotAsync();
+        return res;
+    }
+
+    public async Task<string> GenerateSentence(){
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        var chat = api.Chat.CreateConversation();
+        chat.AppendSystemMessage("Generate one sentence for the student to translate and nothing else.");
+        var senOnEng = await chat.GetResponseFromChatbotAsync();
+        var senOnSrb = await TranslateESSentence(senOnEng);
+        return senOnEng + senOnSrb;
+    }
+
+    public async Task<int> Grade(string orgSentence, string userSentence)
+    {
+        int sum = 0;
+        for(int i = 0; i < 3; i++)
+        {
+            var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+            var chat = api.Chat.CreateConversation();
+            chat.AppendSystemMessage("You are given two sentences orgSentence and userSentence grade how similar they are on the scale of 0 to 100, don't grade to softly. Only return the number of points.");
+            chat.AppendUserInput(orgSentence);
+            chat.AppendUserInput(userSentence);
+            var res= await chat.GetResponseFromChatbotAsync();
+            sum += Int32.Parse(res);
+        }
+        return sum/3;
     }
 }

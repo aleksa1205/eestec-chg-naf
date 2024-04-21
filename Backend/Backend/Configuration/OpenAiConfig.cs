@@ -2,5 +2,5 @@
 
 public class OpenAiConfig
 {
-    public string Key { get; set; } = String.Empty;
+    public string? Key { get; set; } = System.Environment.GetEnvironmentVariable("OpenAI", EnvironmentVariableTarget.Machine);
 }

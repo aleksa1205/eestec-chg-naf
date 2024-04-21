@@ -16,11 +16,31 @@ public class OpenAiController : ControllerBase
         _openAiService = openAiService;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> CompleteSentence(string text)
+    [HttpGet("Translate-English-Serbian/{sentence}")]
+    public async Task<IActionResult> TranslateEnglish(string sentence)
     {
-        var result = await _openAiService.CompleteSentenceAdvance(text);
-        return Ok(result);
+        var res = await _openAiService.TranslateESSentence(sentence);
+        return Ok(res);
     }
 
+    [HttpGet("Translate-Serbian-English/{sentence}")]
+    public async Task<IActionResult> TranslateSerian(string sentence)
+    {
+        var res = await _openAiService.TranslateSESentence(sentence);
+        return Ok(res);
+    }
+
+    [HttpGet("Generate")]
+    public async Task<IActionResult> Generate()
+    {
+        var res = await _openAiService.GenerateSentence();
+        return Ok(res);
+    }
+
+    [HttpGet("Grade/{originalSentence}/{userSentence}")]
+    public async Task<IActionResult> Grade(string originalSentence, string userSentence)
+    {
+        var res = await _openAiService.Grade(originalSentence, userSentence);
+        return Ok(res);
+    }
 }

@@ -2,7 +2,8 @@
 
 public interface IOpenAiService
 {
-    Task<string> CompleteSentence(string text);
-    Task<string> CompleteSentenceAdvance(string text);
-    Task<string> CheckPLanguage(string language);
+    Task<string> TranslateESSentence(string sentence);
+    Task<string> TranslateSESentence(string sentence);
+    Task<string> GenerateSentence();
+    Task<int> Grade(string orgSentence, string userSentence);
 }
