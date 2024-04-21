@@ -11,8 +11,34 @@
   },
   {
     "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "GeneratePartialTest",
+    "RelativePath": "OpenAi/GeneratePartialTest/{level}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
     "Method": "GenerateTest",
     "RelativePath": "OpenAi/GenerateTest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "GetSentencesFromFile",
+    "RelativePath": "OpenAi/GetSentencesFromFile",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -34,6 +60,22 @@
       },
       {
         "Name": "userSentence",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "g",
+    "RelativePath": "OpenAi/Oprem/{a}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "a",
         "Type": "System.String",
         "IsRequired": true
       }

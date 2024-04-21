@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj": {}
+    "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj": {
+    "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\matij\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\obj\\",
+        "projectPath": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\alexp\\.nuget\\packages\\",
+        "outputPath": "D:\\eestec-chg-naf\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matij\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -72,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

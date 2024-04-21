@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.Contracts;
 
 namespace Backend.Controllers;
 
@@ -36,8 +37,9 @@ public class OpenAiController : ControllerBase
         var res = await _openAiService.GenerateSentence();
         return Ok(res);
     }
-    [HttpGet("GenerateInitialTest")]
-    public async Task<IActionResult> GenerateInitialTest()
+
+    [HttpGet("GetSentencesFromFile")]
+    public async Task<IActionResult> GetSentencesFromFile()
     {
         var res = await _openAiService.GetSentencesFromFile();
         return Ok(res);
@@ -62,5 +64,12 @@ public class OpenAiController : ControllerBase
     {
         var res = await _openAiService.GeneratePartialTest(level);
         return Ok(res);
+    }
+
+    [HttpGet("Oprem/{a}")]
+    public async Task<IActionResult> g(string a)
+    {
+        await _openAiService.G(a);
+        return Ok();
     }
 }
