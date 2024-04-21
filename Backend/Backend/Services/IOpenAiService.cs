@@ -6,4 +6,6 @@ public interface IOpenAiService
     Task<string> TranslateSESentence(string sentence);
     Task<string> GenerateSentence();
     Task<int> Grade(string orgSentence, string userSentence);
+    Task<List<string>> GenerateTest();
+    Task<List<string>> GeneratePartialTest(int level);
 }
