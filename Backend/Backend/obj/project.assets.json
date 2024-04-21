@@ -925,19 +925,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexp\\.nuget\\packages\\": {}
+    "C:\\Users\\Jovan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\alexp\\.nuget\\packages\\",
-      "outputPath": "D:\\eestec-chg-naf\\Backend\\Backend\\obj\\",
+      "projectPath": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\Jovan\\.nuget\\packages\\",
+      "outputPath": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alexp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jovan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1000,7 +1000,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

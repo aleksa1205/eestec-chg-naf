@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\eestec-chg-naf\\Backend\\",
+  "WorkspaceRootPath": "D:\\Hakaton\\eestec-chg-naf\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\services\\iopenaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\iopenaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\configuration\\openaiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\implicit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\implicit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\hakaton\\eestec-chg-naf\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,99 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IOpenAiService.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\IOpenAiService.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
-              "RelativeToolTip": "Backend\\Services\\IOpenAiService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Title": "OpenAiConfig.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Configuration\\OpenAiConfig.cs",
+              "RelativeDocumentMoniker": "Backend\\Configuration\\OpenAiConfig.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Configuration\\OpenAiConfig.cs",
+              "RelativeToolTip": "Backend\\Configuration\\OpenAiConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:34:31.073Z",
+              "WhenOpened": "2024-04-21T02:14:28.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OpenAiConfig.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Configuration\\OpenAiConfig.cs",
-              "RelativeDocumentMoniker": "Backend\\Configuration\\OpenAiConfig.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Configuration\\OpenAiConfig.cs",
-              "RelativeToolTip": "Backend\\Configuration\\OpenAiConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "DocumentIndex": 2,
+              "Title": "OpenAiController.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\OpenAiController.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\OpenAiController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:31:42.824Z",
+              "WhenOpened": "2024-04-21T02:13:06.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OpenAiController.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\OpenAiController.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\OpenAiController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:44:33.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T22:32:21.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Backend.csproj",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+              "DocumentMoniker": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend\\Backend.csproj",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
+              "ToolTip": "D:\\Hakaton\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
               "RelativeToolTip": "Backend\\Backend.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-20T22:34:11.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Implicit.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Implicit.cs",
-              "RelativeDocumentMoniker": "Backend\\Implicit.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Implicit.cs",
-              "RelativeToolTip": "Backend\\Implicit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:41:52.821Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 135,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OpenAiService.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\OpenAiService.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs",
-              "RelativeToolTip": "Backend\\Services\\OpenAiService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T22:35:24.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T22:34:11.418Z"
             }
           ]
         }
