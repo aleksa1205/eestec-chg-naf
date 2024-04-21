@@ -69,14 +69,14 @@ public class OpenAiService : IOpenAiService
         int level = 1;
         while (i < 10)
         {
-            chat.AppendSystemMessage$"Generate one sentence on English and its difficulty should be of {level} out of 5");
-            var res=await chat.GetResponseFromChatbot();
+            chat.AppendSystemMessage($"Generate one sentence on English and its difficulty should be of {level} out of 5");
+            var res = await chat.GetResponseFromChatbot();
             lista.Add(res);
         }
         return lista;
     }
 
-    public async Task<List<string>> GeneratePartailTest(int level)
+    public async Task<List<string>> GeneratePartialTest(int level)
     {
         var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
         List<string> lista = new List<string>();
