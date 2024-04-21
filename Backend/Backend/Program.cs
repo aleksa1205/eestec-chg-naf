@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Options;
+
 var AllowFrontendOrgin = "_allowFrontendOrigin";
 
 
@@ -5,12 +7,25 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: AllowFrontendOrgin,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:5173/");
-                      });
+    options.AddPolicy(AllowFrontendOrgin,
+                             policy =>
+                             {
+                                 policy.WithOrigins("http://localhost:5173")
+                                                     .AllowAnyHeader()
+                                                     .AllowAnyMethod();
+                             });
+    //options.AddPolicy(name: AllowFrontendOrgin,
+    //                  policy =>
+    //                  {
+    //                      policy.WithOrigins("http://localhost:5173");
+    //                  });
+    //options.AddDefaultPolicy(builder =>
+    //{
+    //    builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
+    //});
 });
+
+
 
 var openaiconf = new OpenAiConfig();
 var value = System.Environment.GetEnvironmentVariable("OpenAI", EnvironmentVariableTarget.Machine);
