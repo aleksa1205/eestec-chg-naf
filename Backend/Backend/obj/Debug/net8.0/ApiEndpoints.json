@@ -1,0 +1,75 @@
+[
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "Generate",
+    "RelativePath": "OpenAi/Generate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "GenerateTest",
+    "RelativePath": "OpenAi/GenerateTest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "Grade",
+    "RelativePath": "OpenAi/Grade/{originalSentence}/{userSentence}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "originalSentence",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userSentence",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "TranslateEnglish",
+    "RelativePath": "OpenAi/Translate-English-Serbian/{sentence}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sentence",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.OpenAiController",
+    "Method": "TranslateSerian",
+    "RelativePath": "OpenAi/Translate-Serbian-English/{sentence}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sentence",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
