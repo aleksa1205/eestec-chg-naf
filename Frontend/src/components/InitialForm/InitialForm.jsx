@@ -1,5 +1,6 @@
 import languageData from '../../assets/languageData.json';
 import classes from './InitialForm.module.css';
+import { Link } from 'react-router-dom';
 
 function InitialForm() {
     const arrayData = [];
@@ -21,7 +22,7 @@ function InitialForm() {
             </select>
             <br />
             <br />
-            <button type='button'>Submit</button>
+            <Link className='button' to='/initial-quiz'>Submit</Link>
         </form>
     );
 }
