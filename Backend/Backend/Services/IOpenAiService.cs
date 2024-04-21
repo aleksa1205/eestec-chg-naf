@@ -9,4 +9,6 @@ public interface IOpenAiService
     Task<int> Grade(string orgSentence, string userSentence);
     Task<List<string>> GenerateTest();
     Task<List<string>> GeneratePartialTest(int level);
+    Task<string> GeneratePopQuiz(int level);
+    Task<string> CheckPopQuiz(int level, string answer);
 }

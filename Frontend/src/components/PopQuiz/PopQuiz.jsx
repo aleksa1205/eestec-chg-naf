@@ -1,17 +1,10 @@
 import classes from './PopQuiz.module.css';
 
 function PopQuiz() {
-    async function fetchData() {
-        const response = await fetch("https://localhost:7050/OpenAi/GeneratePartialTest");
-        console.log(response);
-        const data = await response.text();
-        console.log(data);
-        return data;
-    }
     return (
         <form className={classes.form} action="">
             <p>Please Translate this sentence to english</p>
-            <p>Nigga</p>
+            <p></p>
             <input type="text" />
             <br />
             <br />

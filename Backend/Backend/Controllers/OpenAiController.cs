@@ -63,4 +63,18 @@ public class OpenAiController : ControllerBase
         var res = await _openAiService.GeneratePartialTest(level);
         return Ok(res);
     }
+
+    [HttpGet("GeneratePopQuiz/{level}")]
+    public async Task<IActionResult> GeneratePopQuiz(int level)
+    {
+        var res = await _openAiService.GeneratePopQuiz(level);
+        return Ok(res);
+    }
+
+    [HttpGet("CheckPopQuiz/{level}/{answer}")]
+    public async Task<IActionResult> CheckPopQuiz(int level, string answer)
+    {
+        var res = await _openAiService.CheckPopQuiz(level, answer);
+        return Ok(res);
+    }
 }

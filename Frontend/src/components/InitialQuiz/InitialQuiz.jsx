@@ -75,7 +75,7 @@ function InitialQuiz() {
         <form className={classes.form} action="">
             <p>Please Translate this sentence to english</p>
             <p>{native[currIndex]}</p>
-            <input onChange={answerEnteredHandler} type="text" />
+            <input size={50} onChange={answerEnteredHandler} type="text" />
             <br />
             <br />
             {
