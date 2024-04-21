@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\eestec-chg-naf\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\openaicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|solutionrelative:backend\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69BA61A6-2318-4CF0-888D-F7A75CE88D5C}|Backend\\Backend.csproj|d:\\eestec-chg-naf\\backend\\backend\\services\\iopenaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,41 +38,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OpenAiService.cs",
               "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs",
               "RelativeDocumentMoniker": "Backend\\Services\\OpenAiService.cs",
               "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\OpenAiService.cs",
               "RelativeToolTip": "Backend\\Services\\OpenAiService.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAgwHMAAAAVAAAA",
+              "ViewState": "AQIAAIoAAAAAAAAAAAD4v5UAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T05:37:32.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OpenAiController.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\OpenAiController.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\OpenAiController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAmwEQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:13:06.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IOpenAiService.cs",
-              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\IOpenAiService.cs",
-              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
-              "RelativeToolTip": "Backend\\Services\\IOpenAiService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T05:37:28.331Z",
               "EditorCaption": ""
             },
             {
@@ -111,7 +85,40 @@
               "RelativeToolTip": "Backend\\Backend.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-20T22:34:11.418Z"
+              "WhenOpened": "2024-04-20T22:34:11.418Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 265,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpenAiController.cs",
+              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\OpenAiController.cs",
+              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Controllers\\OpenAiController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\OpenAiController.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAmwKUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T02:13:06.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOpenAiService.cs",
+              "DocumentMoniker": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\IOpenAiService.cs",
+              "ToolTip": "D:\\eestec-chg-naf\\Backend\\Backend\\Services\\IOpenAiService.cs",
+              "RelativeToolTip": "Backend\\Services\\IOpenAiService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:37:28.331Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -8,7 +8,9 @@ public interface IOpenAiService
     Task<List<string>> GetSentencesFromFile();
     Task<int> Grade(string orgSentence, string userSentence);
 
-    Task G(string sen);
+    //Task G(string sen);
+    void TTS(string sentence);
+
     Task<List<string>> GenerateTest();
     Task<List<string>> GeneratePartialTest(int level);
     Task<string> GeneratePopQuiz(int level);

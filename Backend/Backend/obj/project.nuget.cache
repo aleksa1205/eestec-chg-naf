@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p+xa8lpUXcPxYukFvdqvCoDWM15TyursMtQnpOliQxlDSgYaSqkgEKMbuO524iPNw/45ieyhOQHh8W3x8nOSuw==",
+  "dgSpecHash": "zpQwJA/rt7DftEiKusWikEv80wKpiNDScYR7sCA5YrN4rtG15Molza2zVcbUD1NujhLlT6U1V9TgE0Oo8JuXVQ==",
   "success": true,
   "projectFilePath": "D:\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,8 @@
     "C:\\Users\\alexp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\alexp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\alexp\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
-    "C:\\Users\\alexp\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    "C:\\Users\\alexp\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

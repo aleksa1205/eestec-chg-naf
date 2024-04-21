@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Net.Sockets;
 using System.IO;
 using System.Reflection.Emit;
+using System.Speech.Synthesis;
 
 namespace Backend.Services;
 
@@ -49,11 +50,8 @@ public class OpenAiService : IOpenAiService
     public async Task<List<string>> GetSentencesFromFile()
     {
         Random rnd = new Random();
-<<<<<<< HEAD
-        string[] lines = File.ReadAllLines(@"D:\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
-=======
+        //string[] lines = File.ReadAllLines(@"D:\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
         string[] lines = File.ReadAllLines(@"../../model/datasets/CEFR-SP_Wikiauto_train.txt");
->>>>>>> Jovan
         List<string> sentences = new List<string>();
         while (sentences.Count < 3)
         {
@@ -119,9 +117,7 @@ public class OpenAiService : IOpenAiService
         }
         return lista;
     }
-<<<<<<< HEAD
-}
-=======
+
 
     public async Task<string> GeneratePopQuiz(int level)
     {
@@ -143,5 +139,11 @@ public class OpenAiService : IOpenAiService
         var result = await chat.GetResponseFromChatbotAsync();
         return result;
     }
+
+    public async void TTS(string sentence)
+    {
+        var synth = new SpeechSynthesizer();
+        synth.SetOutputToDefaultAudioDevice();
+        synth.Speak(sentence);
+    }
 }
->>>>>>> Jovan
