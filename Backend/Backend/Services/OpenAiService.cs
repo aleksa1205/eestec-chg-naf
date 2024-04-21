@@ -44,22 +44,22 @@ public class OpenAiService : IOpenAiService
         var senOnSrb = await TranslateESSentence(senOnEng);
         return senOnEng + senOnSrb;
     }
-    public async Task<string[]> GetSentencesFromFile()
+    public async Task<List<string>> GetSentencesFromFile()
     {
         Random rnd = new Random();
         string[] lines = File.ReadAllLines(@"C:\Users\matij\OneDrive - Faculty of Electronic Engineering\Laptop\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
         List<string> sentences = new List<string>();
-        while (sentences.Count < 5)
+        while (sentences.Count < 3)
         {
             // uzima iz svakog nivoa znanja po jednu recenicu i vraca ih (nivoi od 1-6)
             string line = lines[rnd.Next(1, 5990)];
             string[] split = line.Split('\t');
-            if (Convert.ToInt32(split[1]) == sentences.Count + 1)
+            if (Convert.ToInt32(split[1]) == sentences.Count + 3)
             {
-                sentences.Add(split[0]);
+                sentences.Add(split[0] + "|" + await TranslateESSentence(split[0]));
             }
         }
-        return sentences.ToArray();
+        return sentences;
     }
     public async Task<int> Grade(string orgSentence, string userSentence)
     {
