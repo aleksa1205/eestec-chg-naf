@@ -66,10 +66,25 @@ public class OpenAiController : ControllerBase
         return Ok(res);
     }
 
+<<<<<<< HEAD
     [HttpGet("Oprem/{a}")]
     public async Task<IActionResult> g(string a)
     {
         await _openAiService.G(a);
         return Ok();
+=======
+    [HttpGet("GeneratePopQuiz/{level}")]
+    public async Task<IActionResult> GeneratePopQuiz(int level)
+    {
+        var res = await _openAiService.GeneratePopQuiz(level);
+        return Ok(res);
+    }
+
+    [HttpGet("CheckPopQuiz/{level}/{answer}")]
+    public async Task<IActionResult> CheckPopQuiz(int level, string answer)
+    {
+        var res = await _openAiService.CheckPopQuiz(level, answer);
+        return Ok(res);
+>>>>>>> Jovan
     }
 }

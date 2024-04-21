@@ -11,4 +11,6 @@ public interface IOpenAiService
     Task G(string sen);
     Task<List<string>> GenerateTest();
     Task<List<string>> GeneratePartialTest(int level);
+    Task<string> GeneratePopQuiz(int level);
+    Task<string> CheckPopQuiz(int level, string answer);
 }

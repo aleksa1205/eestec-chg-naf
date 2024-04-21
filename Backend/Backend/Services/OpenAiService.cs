@@ -4,6 +4,7 @@ using OpenAI_API.Models;
 using System.ComponentModel;
 using System.Net.Sockets;
 using System.IO;
+using System.Reflection.Emit;
 
 namespace Backend.Services;
 
@@ -48,7 +49,11 @@ public class OpenAiService : IOpenAiService
     public async Task<List<string>> GetSentencesFromFile()
     {
         Random rnd = new Random();
+<<<<<<< HEAD
         string[] lines = File.ReadAllLines(@"D:\eestec-chg-naf\model\datasets\CEFR-SP_Wikiauto_train.txt");
+=======
+        string[] lines = File.ReadAllLines(@"../../model/datasets/CEFR-SP_Wikiauto_train.txt");
+>>>>>>> Jovan
         List<string> sentences = new List<string>();
         while (sentences.Count < 3)
         {
@@ -114,4 +119,29 @@ public class OpenAiService : IOpenAiService
         }
         return lista;
     }
+<<<<<<< HEAD
 }
+=======
+
+    public async Task<string> GeneratePopQuiz(int level)
+    {
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        var chat = api.Chat.CreateConversation();
+        chat.AppendSystemMessage($"Generate one sentence on English and its difficulty should be of {level} out of 5");
+        var senOnEng = await chat.GetResponseFromChatbotAsync();
+        return senOnEng;
+    }
+
+    public async Task<string> CheckPopQuiz(int level, string answer)
+    {
+        var api = new OpenAI_API.OpenAIAPI(_openAiConfig.Key);
+        var chat = api.Chat.CreateConversation();
+        chat.AppendSystemMessage($"The level {level} out of 5 represents the level of difficulty for the Pop Quiz for english sentence that user tried to translate" +
+                                 $", you need to return me an array of objects where first attribute of the object is the word of the answer i will shortly provide and " +
+                                 $"the second attribute is true if the word is correct and false if it isn't, and then last element of the array should be a translated version to english" +
+                                 $"here is the answer: {answer}");
+        var result = await chat.GetResponseFromChatbotAsync();
+        return result;
+    }
+}
+>>>>>>> Jovan
