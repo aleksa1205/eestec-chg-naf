@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "835EEopiG4TQ8SN/ScpZWNU4CR0Wrf57+WmgHMYzdJDLIGXl78iWngYIoxuzeFtoEb1oN+CLEM/ZDuDZD7VynQ==",
+  "dgSpecHash": "fK3tFlOHnycZ7OWcWpKcjOeKftWWagz4weDbahclqlFKCLC2g41LYUz6NZSfJrv1OGte81dhfaUsnrlJtqDDnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\matij\\OneDrive - Faculty of Electronic Engineering\\Laptop\\eestec-chg-naf\\Backend\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,8 @@
     "C:\\Users\\matij\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\matij\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\matij\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
-    "C:\\Users\\matij\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    "C:\\Users\\matij\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\matij\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

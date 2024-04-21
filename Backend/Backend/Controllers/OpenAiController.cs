@@ -63,4 +63,10 @@ public class OpenAiController : ControllerBase
         var res = await _openAiService.GeneratePartialTest(level);
         return Ok(res);
     }
+    [HttpGet("TTS")]
+    public async Task<IActionResult> TTS(string sentence)
+    {
+        _openAiService.TTS(sentence);
+        return Ok();
+    }
 }

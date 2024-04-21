@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using OpenAI_API.Models;
 using System.ComponentModel;
 using System.IO;
+using System;
+using System.Speech.Synthesis;
 
 namespace Backend.Services;
 
@@ -110,5 +112,12 @@ public class OpenAiService : IOpenAiService
             i++;
         }
         return lista;
+    }
+
+    public async void TTS(string sentence)
+    {
+        var synth = new SpeechSynthesizer();
+        synth.SetOutputToDefaultAudioDevice();
+        synth.Speak(sentence);
     }
 }
