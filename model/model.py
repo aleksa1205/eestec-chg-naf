@@ -70,7 +70,7 @@ train_ds = train_ds.cache().prefetch(buffer_size=AUTOTUNE)
 val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
 test_ds = test_ds.cache().prefetch(buffer_size=AUTOTUNE)
 
-embedding_dim = 16
+embedding_dim = 5
 
 model = tf.keras.Sequential([
   Embedding(max_features, embedding_dim),
